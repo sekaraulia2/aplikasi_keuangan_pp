@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Beranda</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        /* Sedikit styling untuk icon biar cocok di card */
+        .card i {
+            font-size: 50px;
+            color: #444;
+            margin-left: 20px;
+            align-self: center;
+        }
+        .card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        /* Responsive agar icon dan teks tetap rapih */
+        @media (max-width: 600px) {
+            .card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .card i {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -27,7 +58,7 @@
                     <p class="subtitle">Batas pembayaran 15 Mei 2024</p>
                     <button>Bayar Sekarang</button>
                 </div>
-                <img src="https://images.app.goo.gl/7cpyhCbH1dZkj58V9" alt="Kalender">
+                <i class="fa-solid fa-calendar-days"></i>
             </div>
 
             <div class="card">
@@ -37,7 +68,7 @@
                     <p class="subtitle">Total tagihan yang belum dibayar</p>
                     <button>Lihat Detail</button>
                 </div>
-                <img src="https://images.app.goo.gl/SiengeLj8KHbL7yU9" alt="Koin">
+                <i class="fa-solid fa-coins"></i>
             </div>
         </section>
 
@@ -46,14 +77,14 @@
             <h3>Berita Terbaru</h3>
 
             <div class="news-item">
-                <img src="https://images.app.goo.gl/wtukSRyvctmmDrGC8" alt="Sekolah">
+                <i class="fa-solid fa-school" style="font-size:40px; color:#555;"></i>
                 <h4>Pengumuman Libur Semester</h4>
                 <p>Pondok Pesantren akan libur mulai tanggal 1 Juni 2024 hingga 30 Juni 2024.</p>
                 <a href="#">Baca Selengkapnya</a>
             </div>
 
             <div class="news-item">
-                <img src="https://images.app.goo.gl/8dku7vtwQ64fpxc1A" alt="Masjid">
+                <i class="fa-solid fa-mosque" style="font-size:40px; color:#555;"></i>
                 <h4>Kegiatan Ramadhan</h4>
                 <p>Jadwal kegiatan Ramadhan tahun ini meliputi buka bersama, tadarus, dan shalat tarawih berjamaah.</p>
                 <a href="#">Lihat Jadwal</a>
